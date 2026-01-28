@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/logotype-posts/static/css/main.a8df0a46.css",
+    "main.js": "/logotype-posts/static/js/main.e9d1cd5d.js",
+    "static/media/close.svg": "/logotype-posts/static/media/close.a18ba8b482296074ef10264e0d3619f9.svg",
+    "static/media/search.svg": "/logotype-posts/static/media/search.e09e29837485fbad43d4226dd8bef6ad.svg",
+    "static/media/mobile-menu.svg": "/logotype-posts/static/media/mobile-menu.5d44693be728b29eafde23ef5100f494.svg",
+    "index.html": "/logotype-posts/index.html",
+    "static/media/arrow-right.svg": "/logotype-posts/static/media/arrow-right.4203022e3c69bcf64f0ce441d3a42308.svg",
+    "static/media/arrow-down.svg": "/logotype-posts/static/media/arrow-down.24d9ac1c99f9e6cb57c97d2e7003fda8.svg",
+    "static/media/dot.svg": "/logotype-posts/static/media/dot.638a135cd4e99ce0240fa62201420f2f.svg",
+    "main.a8df0a46.css.map": "/logotype-posts/static/css/main.a8df0a46.css.map",
+    "main.e9d1cd5d.js.map": "/logotype-posts/static/js/main.e9d1cd5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8df0a46.css",
+    "static/js/main.e9d1cd5d.js"
+  ]
+}
