@@ -1,0 +1,19 @@
+@use "../../assets/styles/mixins.scss" as *;
+
+.postlist {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
+  min-height: calc(100dvh - 11.25rem);
+  padding-block-end: 10rem;
+
+  &__no_result,
+  &__error {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--red);
+    text-align: center;
+  }
+}

@@ -1,0 +1,119 @@
+@use "../../assets/styles/mixins.scss" as *;
+
+.nav {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+
+  @include md {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--white-opacity);
+    transform: translateX(-100%);
+    transition: transform 360ms;
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.75rem;
+
+    @include md {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 90%;
+      height: 100%;
+      margin-inline-start: 0;
+      background-color: var(--white);
+      border-top: 1px solid var(--gray);
+      overflow-y: auto;
+    }
+
+    @include sm {
+      max-width: 20rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+
+    @include md {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      & + & {
+        border-top: 1px solid var(--gray);
+      }
+    }
+
+    &:hover {
+      .nav__submenu {
+        transform: scale(1);
+      }
+
+      .nav__item_inner {
+        color: var(--dark-gray);
+      }
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: scale(0);
+    transition: transform 150ms;
+  }
+
+  &__item_inner {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 150ms;
+  }
+
+  &__item_icon {
+    width: 0.625rem;
+    height: 0.3125rem;
+  }
+
+  &__mobile_menu {
+    display: none;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.125rem;
+    background-color: var(--white);
+
+    @include md {
+      display: flex;
+    }
+  }
+
+  &__menu_logo {
+    height: 1.5rem;
+  }
+
+  &__menu_close {
+    width: 1.125rem;
+    height: 1.125rem;
+    cursor: pointer;
+  }
+}
+ 
